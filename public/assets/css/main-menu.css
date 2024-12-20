@@ -1,0 +1,359 @@
+/* General Body Styling */
+body {
+  background-color: #ffffff;
+  margin: 0;
+  font-family: Inter, sans-serif;
+}
+
+/* Intro Section Styling */
+.intro-section {
+  margin: 0;
+}
+
+/* Intro Section - Intro 1 Styling */
+.intro-section #intro1 {
+  text-decoration: dashed;
+  border-style: solid;
+  border-color: #D04646;
+  background-color: #D04646;
+  margin: 0;
+  padding: 0px;
+  color: white;
+  text-align: center;
+}
+
+/* Intro Section - Intro 2 Styling */
+.intro-section #intro2 {
+  font-weight: lighter;
+  font-size: larger;
+  background-color: #E9E9E9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px;
+  margin: 0;
+  width: 100%;
+  min-height: 50px;
+  height: 70px;
+  box-sizing: border-box;
+}
+
+/* Logo Container in Intro 2 */
+.intro-section #intro2 .logo-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Logo Styling */
+.intro-section #intro2 .logo {
+  margin-top: 15px;
+  height: 200px;
+}
+
+/* Search Input Styling */
+#searchInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Search Container in Intro 2 */
+.intro-section #intro2 .search-container {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Search Input in Intro 2 */
+.intro-section #intro2 input {
+  height: 30px;
+  width: 100%;
+  max-width: 500px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Search Button in Intro 2 */
+.intro-section #intro2 .search-button {
+  padding: 5px;
+  border: 1px solid #ccc;
+  background-color: #f43219;
+  width: 40px;
+  cursor: pointer;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Search Button Icon */
+.intro-section #intro2 .search-button i {
+  font-size: 15px;
+  color: white;
+}
+
+/* Search Results */
+.search-results {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  max-height: 200px;
+  overflow-y: auto;
+  position: absolute;
+  z-index: 1000;
+  width: 75%;
+  top: 100%;
+  box-sizing: border-box;
+}
+
+/* Individual Search Result */
+.search-results li {
+  padding: 3px;
+  cursor: pointer;
+}
+
+.search-results li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Profile Cart in Intro 2 */
+.intro-section #intro2 .profile-cart {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 50px;
+}
+
+/* Profile Cart Links */
+.intro-section #intro2 .profile-cart a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.intro-section #intro2 .profile-cart a:hover {
+  color: #D04646;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  padding: 10px 0;
+  margin: 0;
+}
+
+/* Navbar Links */
+.navbar a {
+  text-decoration: none;
+  color: black;
+  padding: 14px 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  background-color: #D04646;
+  color: white;
+}
+
+/* Cart Icon */
+#cartIcon {
+  position: relative;
+}
+
+/* Cart Total */
+#cartTotal {
+  font-weight: bold;
+  position: relative;
+  bottom: -15px;
+  right: 49px;
+  color: rgb(0, 0, 0);
+  border-radius: 100%;
+  font-size: 13px;
+}
+
+/* Slideshow Container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  max-width: 70%;
+}
+
+/* Individual Slides */
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  width: 100%;
+  height: auto;
+}
+
+/* Fade Animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Previous and Next Buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Selection Boxes */
+.selection-boxes {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  margin: 0 20px;
+}
+
+/* Individual Selection Box */
+.selection-box {
+  text-align: left;
+  padding: 20px;
+  border: 2px solid #E9E9E9;
+  width: 25%;
+  box-sizing: border-box;
+}
+
+/* Meat Section */
+#meat-section {
+  text-align: left;
+  padding: 20px;
+  border: 2px solid #E9E9E9;
+  width: 25%;
+  box-sizing: border-box;
+  background-image: url('transparent_meat.png');
+  background-color: #f43219;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Vegetable Section */
+#vegetable-section {
+  text-align: left;
+  padding: 20px;
+  border: 2px solid #E9E9E9;
+  width: 25%;
+  box-sizing: border-box;
+  background-image: url('transparent_vegetable.png');
+  background-color: chartreuse;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Seafood Section */
+#seafood-section {
+  text-align: left;
+  padding: 20px;
+  border: 2px solid #E9E9E9;
+  width: 25%;
+  box-sizing: border-box;
+  background-image: url('transparent_seafood.png');
+  background-color: aqua;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Selection Box Headers */
+.selection-box h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Selection Box Paragraphs */
+.selection-box p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+/* Selection Box Buttons */
+.selection-box button {
+  padding: 10px 20px;
+  background-color: #D04646;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.selection-box button:hover {
+  background-color: #B33636;
+}
+
+/* Cart Count */
+#cartCount {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background-color: #E53935;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 8px;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Profile Cart Positioning */
+.profile-cart {
+  position: relative;
+}
+
+/* Footer Styling */
+.footer {
+  font-weight: bolder;
+  font-style: italic;
+  background-color: #D04646;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  text-align: center;
+  padding: 1px 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

@@ -1,0 +1,371 @@
+/* General body styling */
+body {
+    background-color: #ffffff;
+    margin: 0;
+    font-family: Inter, sans-serif;
+}
+
+/* Introduction section styling */
+.intro-section {
+    margin: 0;
+}
+
+/* Introduction section: promo text */
+.intro-section #intro1 {
+    text-decoration: dashed;
+    border-style: solid;
+    border-color: #D04646;
+    background-color: #D04646;
+    margin: 0;
+    padding: 0px;
+    color: white;
+    text-align: center;
+}
+
+/* Introduction section: main container */
+.intro-section #intro2 {
+    font-weight: lighter;
+    font-size: larger;
+    background-color: #E9E9E9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px;
+    margin: 0;
+    width: 100%;
+    min-height: 50px;
+    height: 70px;
+    box-sizing: border-box;
+}
+
+/* Introduction section: logo container */
+.intro-section #intro2 .logo-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Introduction section: logo image */
+.intro-section #intro2 .logo {
+    margin-top: 15px;
+    height: 200px;
+}
+
+/* Introduction section: search container */
+.intro-section #intro2 .search-container {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Introduction section: search input */
+.intro-section #intro2 input {
+    height: 30px;
+    width: 100%;
+    max-width: 500px;
+    padding: 5px;
+    border: 1px solid #E9E9E9;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Introduction section: search button */
+.intro-section #intro2 .search-button {
+    padding: 5px;
+    border: 1px solid #E9E9E9;
+    background-color: #D04646;
+    width: 40px;
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Introduction section: search button icon */
+.intro-section #intro2 .search-button i {
+    font-size: 15px;
+    color: white;
+}
+
+/* Introduction section: profile and cart icons container */
+.intro-section #intro2 .profile-cart {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Introduction section: profile and cart links */
+.intro-section #intro2 .profile-cart a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Introduction section: profile and cart links hover effect */
+.intro-section #intro2 .profile-cart a:hover {
+    color: #D04646;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    padding: 10px 0;
+    margin: 0;
+}
+
+/* Navbar links */
+.navbar a {
+    text-decoration: none;
+    color: black;
+    padding: 14px 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Navbar links hover effect */
+.navbar a:hover {
+    background-color: #D04646;
+    color: white;
+}
+
+/* Cart container styling */
+.cart-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+/* Cart items section styling */
+.cart-items {
+    flex: 3;
+    border: 1px solid #E9E9E9;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #E9E9E9;
+}
+
+/* Cart items section heading */
+.cart-items h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Cart items table */
+.cart-items table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Cart items table header and cells */
+.cart-items table th, .cart-items table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #E9E9E9;
+}
+
+/* Cart items table header */
+.cart-items table th {
+    background-color: #E9E9E9;
+}
+
+/* Cart items table image cells */
+.cart-items table td img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+/* Cart summary section styling */
+.cart-summary {
+    flex: 1;
+    border: 1px solid #E9E9E9;
+    background-color: #E9E9E9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-left: 20px; 
+}
+
+/* Cart summary section heading */
+.cart-summary h2 {
+    font-size: 20px;
+    color: #333;
+}
+
+/* Cart summary section text */
+.cart-summary p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* Cart summary input fields */
+.cart-summary input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+/* Cart summary highlighted text */
+.cart-summary span {
+    color: #E53935;
+    font-weight: bold;
+}
+
+/* Add to cart button styling */
+.add-to-cart-button {
+    background-color: #E53935;
+    color: #E9E9E9;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Add to cart button hover effect */
+.add-to-cart-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Search results container */
+.search-results {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    max-height: 200px;
+    overflow-y: auto;
+    position: absolute;
+    z-index: 1000;
+    width: 75%;
+    top: 100%; 
+    box-sizing: border-box; 
+}
+
+/* Search results items */
+.search-results li {
+    padding: 3px;
+    cursor: pointer;
+}
+
+/* Search results items hover effect */
+.search-results li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Footer styling */
+.footer {
+    font-weight: bolder;
+    font-style: italic;
+    background-color: #D04646;
+    width: 100%;
+    height: 5%;
+    text-align: center;
+    padding: 1px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Footer text */
+.footer p {
+    margin: 0;
+}
+
+/* Cart count badge styling */
+#cartCount {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: #E53935;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Profile cart position */
+.profile-cart {
+    position: relative;
+}
+
+/* Cart total styling */
+#cartTotal {
+    font-weight: bold;
+    position: relative;
+    bottom: -15px;
+    right: 49px;
+    color: rgb(0, 0, 0);
+    border-radius: 100%;
+    font-size: 13px;
+}
+
+/* Checkout and reset button common styling */
+.checkout-button,
+.reset-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 250px;
+    position: flex;
+}
+
+/* Checkout button styling */
+.checkout-button {
+    background-color: #4CAF50;
+}
+
+/* Reset button styling */
+.reset-button {
+    background-color: #f44336;
+}
+
+/* Checkout and reset button hover effect */
+.checkout-button:hover,
+.reset-button:hover {
+    opacity: 0.9;
+}
+
+/* Cart summary section (repeat) */
+.cart-summary {
+    padding: 20px;
+    border: 1px solid #E9E9E9;
+    border-radius: 5px;
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+}
+
+/* Cart summary section heading (repeat) */
+.cart-summary h2 {
+    margin-bottom: 20px;
+}
+
+/* Cart summary section text (repeat) */
+.cart-summary p {
+    margin-bottom: 20px;
+}
+
+/* Cart summary buttons container */
+.cart-summary .buttons {
+    margin-top: auto;
+}

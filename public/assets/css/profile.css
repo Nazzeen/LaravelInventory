@@ -1,0 +1,372 @@
+/* Set universal styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set body styles */
+body {
+    background-color: #E9E9E9; 
+    margin: 0;
+    font-family: Inter, sans-serif; 
+}
+
+/* Styles for the intro section */
+.intro-section {
+    margin: 0;
+}
+
+/* Styles for the intro section text */
+.intro-section #intro1 {
+    text-decoration: dashed; 
+    border-style: solid; 
+    border-color: #D04646; 
+    background-color: #D04646; 
+    padding: 0px; 
+    color: white; 
+    text-align: center; 
+}
+
+/* Styles for the main intro section container */
+.intro-section #intro2 {
+    font-weight: lighter; 
+    font-size: larger; 
+    background-color: #E9E9E9; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 11px; 
+    width: 100%; 
+    min-height: 50px; 
+    height: 70px; 
+    box-sizing: border-box; 
+}
+
+/* Styles for the logo container within intro section */
+.intro-section #intro2 .logo-container {
+    flex: 1; 
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center; 
+}
+
+/* Styles for the logo within intro section */
+.intro-section #intro2 .logo {
+    margin-top: 15px; 
+    height: 200px;
+}
+
+/* Styles for the search container within intro section */
+.intro-section #intro2 .search-container {
+    flex: 2; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    position: relative; 
+}
+
+/* Styles for the search input within intro section */
+.intro-section #intro2 input {
+    height: 30px; 
+    width: 100%; 
+    max-width: 500px; 
+    padding: 5px;
+    border: 1px solid #ccc; 
+    box-sizing: border-box; 
+}
+
+/* Styles for the search button within intro section */
+.intro-section #intro2 .search-button {
+    padding: 5px; 
+    border: 1px solid #ccc; 
+    background-color: #D04646; 
+    width: 40px; 
+    cursor: pointer; 
+    font-size: 12px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+/* Styles for the search button icon within intro section */
+.intro-section #intro2 .search-button i {
+    font-size: 15px; 
+    color: white; 
+}
+
+/* Styles for the profile cart within intro section */
+.intro-section #intro2 .profile-cart {
+    flex: 1; 
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+    gap: 50px; 
+}
+
+/* Styles for links within the profile cart */
+.intro-section #intro2 .profile-cart a {
+    color: black; 
+    text-decoration: none; 
+    font-size: 20px; 
+}
+
+/* Hover styles for links within the profile cart */
+.intro-section #intro2 .profile-cart a:hover {
+    color: #D04646; 
+}
+
+/* Styles for the cart icon */
+#cartIcon {
+    position: relative; 
+}
+
+/* Additional styles for the cart total */
+#cartTotal {
+    font-weight: bold; 
+    position: relative; 
+    bottom: -15px; 
+    right: 49px; 
+    color: rgb(0, 0, 0); 
+    border-radius: 100%; 
+    font-size: 13px; 
+}
+
+/* Styles for the profile section */
+.profile-section {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 40px;
+    justify-content: center;
+}
+
+.profile-sidebar {
+    width: 200px; /* Adjust width as needed */
+    margin-right: 20px; /* Space between sidebar and form */
+}
+
+.profile-content, .about-us, .contact-us, .term-condition, .privacy-policy {
+    margin-bottom: 20px; /* Space between links */
+}
+
+/* Common styles for the sidebar links */
+.profile-sidebar a {
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+/* Hover effect for sidebar links */
+.profile-sidebar a:hover {
+    color: #D04646;
+}
+
+/* Remove the specific position styles from the existing classes */
+.about-us, .contact-us, .term-condition, .privacy-policy {
+    margin-top: 0;
+    position: static;
+}
+
+/* Styles for the profile header */
+.profile-header {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 25px;
+    flex-wrap: wrap; 
+}
+
+/* Styles for the icon within the profile header */
+.profile-header i {
+    font-size: 50px; 
+    color: #333; 
+    margin-right: 20px; 
+}
+
+/* Styles for the profile name container */
+.profile-name-container {
+    display: flex; 
+    align-items: center; 
+}
+
+.profile-content {
+    margin-top: 20px;
+  }
+
+/* Styles for the profile name within the header */
+.profile-header .profile-name {
+    font-size: 24px; 
+    color: #d1411e; 
+    word-break: break-all; 
+    white-space: normal; 
+}
+
+/* Styles for profile content headings */
+.profile-content h3 {
+    margin-bottom: 10px; 
+}
+
+/* Styles for profile content lists */
+.profile-content ul {
+    list-style: none; 
+    padding-left: 0; 
+}
+
+/* Styles for profile content list items */
+.profile-content ul li {
+    margin-bottom: 10px; 
+}
+
+/* Styles for links within profile content list items */
+.profile-content ul li a {
+    text-decoration: none; 
+    color: #333; 
+    font-size: 18px; 
+}
+
+/* Additional CSS for the profile form */
+.profile-form {
+    background-color: white; 
+    padding: 20px; 
+    border-radius: 8px; 
+    width: 800px; 
+    margin-bottom: 30px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow for better visibility */
+}
+
+/* Styles for the profile section layout */
+.profile-section {
+    display: flex; 
+    align-items: flex-start; 
+    padding-top: 40px; 
+}
+
+/* Styles for the logo group within the profile form */
+.profile-form .form-group.logo-group {
+    text-align: left; 
+}
+
+/* Styles for the logo within the profile form */
+.profile-form .form-logo {
+    height: 150px; 
+    margin-top: -50px; 
+    margin-left: -30px; 
+}
+
+/* Styles for headings within the profile form */
+.profile-form h2 {
+    margin-bottom: 20px; 
+    color: #d1411e; 
+}
+
+/* Styles for form groups within the profile form */
+.profile-form .form-group {
+    margin-bottom: 3px; 
+}
+
+/* Styles for labels within the profile form */
+.profile-form label {
+    display: block; 
+    margin-bottom: 5px; 
+    font-weight: bold; 
+    color: #333; 
+}
+
+/* Styles for inputs and selects within the profile form */
+.profile-form input,
+.profile-form select {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 5px; 
+    border: 1px solid #ccc; 
+    border-radius: 12px; 
+}
+
+/* Styles for search results */
+.search-results {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    background-color: white; 
+    max-height: 200px; 
+    overflow-y: auto; 
+    position: absolute; 
+    z-index: 1000; 
+    width: 75%; 
+    top: 100%; 
+    box-sizing: border-box;
+}
+
+/* Styles for items within search results */
+.search-results li {
+    padding: 3px; 
+    cursor: pointer; 
+}
+
+/* Hover styles for items within search results */
+.search-results li:hover {
+    background-color: #f0f0f0; 
+}
+
+/* Styles for the cart count */
+#cartCount {
+    position: absolute; 
+    top: 10px; 
+    right: 20px; 
+    background-color: #E53935; 
+    color: white; 
+    border-radius: 50%; 
+    padding: 2px 8px;
+    font-size: 12px; 
+    font-weight: bold; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+/* Styles for the profile cart */
+.profile-cart {
+    position: relative; 
+}
+
+/* Styles for rows within the profile form */
+.profile-form .form-row {
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Styles for form groups within rows */
+.profile-form .form-row .form-group {
+    flex: 1; 
+    min-width: 200px;
+}
+
+/* Styles for the button group within the profile form */
+.profile-form .button-group {
+    display: flex; 
+    justify-content: flex-start; 
+    gap: 10px;
+}
+
+/* Styles for buttons within the profile form */
+.profile-form button {
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    font-size: 16px; 
+}
+
+/* Specific styles for the submit button within the profile form */
+.profile-form button[type="submit"] {
+    background-color: #4CAF50; 
+    color: white; 
+}
+
+/* Specific styles for the reset button within the profile form */
+.profile-form button[type="reset"] {
+    background-color: #f44336; 
+    color: white; 
+}

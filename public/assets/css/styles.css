@@ -1,0 +1,311 @@
+/* Body styling */
+body {
+  background-color: #ffffff;
+  margin: 0;
+  font-family: Inter, sans-serif;
+}
+
+/* Introduction section */
+.intro-section {
+  margin: 0;
+}
+
+/* Introduction section - intro1 */
+.intro-section #intro1 {
+  text-decoration: dashed; /* Dashed underline for intro1 text */
+  border-style: solid;
+  border-color: #D04646;
+  background-color: #D04646;
+  margin: 0;
+  padding: 0px;
+  color: white;
+  text-align: center;
+}
+
+/* Introduction section - intro2 */
+.intro-section #intro2 {
+  font-weight: lighter;
+  font-size: larger;
+  background-color: #E9E9E9;
+  display: flex;
+  justify-content: space-between; /* Space between elements in intro2 */
+  align-items: center;
+  padding: 11px;
+  margin: 0;
+  width: 100%;
+  min-height: 50px;
+  height: 70px;
+  box-sizing: border-box;
+}
+
+/* Logo container inside intro2 */
+.intro-section #intro2 .logo-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Logo styling */
+.intro-section #intro2 .logo {
+  margin-top: 15px;
+  height: 200px;
+}
+
+/* Search container inside intro2 */
+.intro-section #intro2 .search-container {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+/* Search input styling */
+.intro-section #intro2 input {
+  height: 30px;
+  width: 100%;
+  max-width: 500px;
+  padding: 5px;
+  border: 1px solid #E9E9E9;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Search button styling */
+.intro-section #intro2 .search-button {
+  padding: 5px;
+  border: 1px solid #E9E9E9;
+  background-color: #D04646;
+  width: 40px;
+  cursor: pointer;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Search button icon styling */
+.intro-section #intro2 .search-button i {
+  font-size: 15px;
+  color: white;
+}
+
+/* Profile and cart container inside intro2 */
+.intro-section #intro2 .profile-cart {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 50px;
+}
+
+/* Profile and cart links styling */
+.intro-section #intro2 .profile-cart a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Profile and cart links hover effect */
+.intro-section #intro2 .profile-cart a:hover {
+  color: #D04646;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  padding: 10px 0;
+  margin: 0;
+}
+
+/* Navbar links styling */
+.navbar a {
+  text-decoration: none;
+  color: black;
+  padding: 14px 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Navbar links hover effect */
+.navbar a:hover {
+  background-color: #D04646;
+  color: white;
+}
+
+/* Item section styling */
+.item-section {
+  padding: 17px;
+  background-color: #E9E9E9;
+}
+
+/* Item section title styling */
+.item-section h2 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+/* Filter and sort button styling */
+#filterSortButton {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  border: 1px solid #000000;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+/* FontAwesome filter icon */
+#filterSortButton::after {
+  content: '\f0b0';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-left: 10px;
+}
+
+/* Filter and sort section styling */
+.filter-sort {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+/* Main item container styling */
+.MainItem {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Search Results */
+.search-results {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    max-height: 200px;
+    overflow-y: auto;
+    position: absolute;
+    z-index: 1000;
+    width: 75%;
+    top: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Individual Search Result */
+  .search-results li {
+    padding: 3px;
+    cursor: pointer;
+  }
+
+  .search-results li:hover {
+    background-color: #f0f0f0;
+  }
+
+/* Individual item styling */
+.Items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensure even spacing between elements */
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  width: 210px;
+  height: 400px; /* Set a fixed height */
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+/* Item images styling */
+.Items img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  max-height: 200px; /* Ensure the image does not exceed a certain height */
+}
+
+/* Item content styling */
+.Items .item-content {
+  flex-grow: 1; /* Allow content to grow and take available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the content vertically */
+}
+
+/* Add to cart button styling */
+.Items button {
+  padding: 10px 20px;
+  background-color: #D04646;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Add to cart button hover effect */
+.Items button:hover {
+  background-color: #D04646;
+}
+
+
+
+/* Cart icon position */
+#cartIcon {
+  position: relative;
+}
+
+/* Cart count badge styling */
+#cartCount {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background-color: #E53935;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 8px;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Profile and cart section relative position */
+.profile-cart {
+  position: relative;
+}
+
+/* Cart total styling */
+#cartTotal {
+  font-weight: bold;
+  position: relative;
+  bottom: -15px;
+  right: 49px;
+  color: rgb(0, 0, 0);
+  border-radius: 100%;
+  font-size: 13px;
+}
+
+/* Footer styling */
+.footer {
+  font-weight: bolder;
+  font-style: italic;
+  background-color: #D04646;
+  left: 0;
+  width: 100%;
+  height: 5%;
+  text-align: center;
+  padding: 1px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
